@@ -1,18 +1,15 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:path_provider/path_provider.dart';
 
 import 'constants.dart';
 
 var fcmtoken = "fcm";
-
-
-void commonLaunchURL(_url) async =>
-    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 
 int getColorCode(String color){
  return  int.parse(color.replaceAll("#", "0xff"));
@@ -63,3 +60,4 @@ void logLongString(String s) {
     endIndex = startIndex + n;
   }
 }
+

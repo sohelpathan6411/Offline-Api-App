@@ -33,6 +33,13 @@ dependencies:
   flutter_svg: ^1.0.3
   flutter_neumorphic: ^3.2.0
   confetti: ^0.6.0
+  connectivity_plus: ^2.2.0
+  provider: ^6.0.2
+  fluttertoast: ^8.0.8
+  flutter_easyloading: ^3.0.0
+  flutter_slidable: ^0.6.0
+  path_provider: ^2.0.8
+  sqflite: ^2.0.2
 
 
 
