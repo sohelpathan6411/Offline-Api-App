@@ -41,6 +41,8 @@ class CustomViewModel extends ChangeNotifier {
   }
 
   Future deletePost(index, id) async {
+
+
     await DBProvider.db.deletePost(id);
     postList.removeAt(index);
     notifyListeners();

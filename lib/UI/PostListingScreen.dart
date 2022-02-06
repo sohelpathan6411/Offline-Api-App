@@ -184,7 +184,7 @@ class _PostListingScreenState extends State<PostListingScreen> {
                                         Provider.of<CustomViewModel>(context,
                                                 listen: false)
                                             .deletePost(
-                                                0,
+                                                index,
                                                 providerListener
                                                     .postList[index].id)
                                             .then((value) async {
