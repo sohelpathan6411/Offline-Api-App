@@ -4,16 +4,13 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:url_launcher/url_launcher.dart';
+var bearerToken = "786785e9-1b74-430a-80d9-aae49678954f";
 
-import 'constants.dart';
 
-var fcmtoken = "fcm";
+void commonLaunchURL(_url) async =>
+    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 
-int getColorCode(String color){
- return  int.parse(color.replaceAll("#", "0xff"));
-}
 
 pushReplacement(BuildContext context, Widget destination) {
   Navigator.pushReplacement(

@@ -10,24 +10,22 @@ String loremShort =
 
 const FINISHED_ON_BOARDING = 'finishedOnBoarding';
 
-const Color primary = Color(0xFF0F263B);
-const Color secondary = Color(0xFF672024);
-const Color white = Color(0xFFFFFFFF);
+const Color COLOR_PURPLE = Color(0xFF7555CF);
+const Color COLOR_GREEN = Color(0xFF11D0A2);
+const Color COLOR_SKY_BLUE = Color(0xFF02D9E7);
+const Color COLOR_BACKGROUND = Color(0xFFFFFDFD);
+const Color COLOR_WHITE = Color(0xFFFFFFFF);
 
-const redGradient = [
-  Color(0xFF672024),
-  Color(0xFF591A1D),
-];
-
-const whiteGradient = [
-  Color(0xFFF5F1EE),
-  Color(0xFFFFFFFF),
-];
 
 const bottomBarHeight = 95.0;
 
-const APP_TITLE = 'DSync App';
+const APP_TITLE = 'Mobile Dev Test';
 const API_KEY = "";
 const currencySymbl = "\$";
 
-const getallposts = "https://jsonplaceholder.typicode.com/posts";
+const mailUrl =
+    "https://api.sheety.co/bdcbafbc1f4197dda178b9e69f6ccee9/techAlchemyDeveloperTest1";
+const allEvents = mailUrl + "/allEvents";
+const eventDetails = mailUrl + "/eventDetails";
+const checkout = mailUrl + "/checkout";
+const purchase = mailUrl + "/purchase";

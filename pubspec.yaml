@@ -32,14 +32,18 @@ dependencies:
   google_fonts: ^2.2.0
   flutter_svg: ^1.0.3
   flutter_neumorphic: ^3.2.0
-  confetti: ^0.6.0
-  connectivity_plus: ^2.2.0
   provider: ^6.0.2
   fluttertoast: ^8.0.8
   flutter_easyloading: ^3.0.0
-  flutter_slidable: ^0.6.0
-  path_provider: ^2.0.8
-  sqflite: ^2.0.2
+  carousel_slider: ^4.0.0
+  intl: ^0.17.0
+  shimmer: ^2.0.0
+  sliding_up_panel: any
+  customizable_space_bar: ^0.2.0
+  like_button: ^2.0.4
+  flutter_email_sender: ^5.1.0
+  url_launcher: ^6.0.20
+  flutter_add_to_cart_button: ^1.0.0+1
 
 
 
@@ -50,7 +54,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_native_splash: ^1.2.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -75,9 +78,7 @@ flutter:
   assets:
     - assets/
 
-flutter_native_splash:
-  image: assets/logo.png
-  color: FFFFFF
+
 
 
   # assets:

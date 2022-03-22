@@ -3,7 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'Helpers/constants.dart';
-import 'UI/PostListingScreen.dart';
+import 'UI/SplashScreen.dart';
 import 'View Models/CustomViewModel.dart';
 
 Future<void> main() async {
@@ -20,7 +20,7 @@ void configLoading() {
     ..radius = 20
     ..backgroundColor = Colors.transparent
     ..maskColor = Colors.white
-    ..indicatorColor = primary
+    ..indicatorColor = COLOR_PURPLE
     ..userInteractions = false
     ..dismissOnTap = false
     ..boxShadow = <BoxShadow>[]
@@ -37,12 +37,12 @@ class App extends StatelessWidget {
         providers: [
           ChangeNotifierProvider(
             create: (context) => CustomViewModel(),
-            child: PostListingScreen(),
+            child: SplashScreen(),
           ),
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: PostListingScreen(),
+          home: SplashScreen(),
         ),
       ),
       builder: EasyLoading.init(),
